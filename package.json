@@ -1,0 +1,45 @@
+{
+  "name": "gdyfe-cli",
+  "version": "0.4.6",
+  "description": "Guangdianyun frontend devlopment tools",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "gdy": "bin/gdy.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gdy": "gdy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corcd/gdyfe-cli.git"
+  },
+  "author": "whzcorcd <whzcorcd@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "gdy",
+    "cli",
+    "fe",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/corcd/gdyfe-cli/issues"
+  },
+  "homepage": "https://github.com/corcd/gdyfe-cli",
+  "dependencies": {
+    "ali-oss": "^6.6.0",
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "envinfo": "^7.5.0",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "path": "^0.12.7",
+    "pipe": "^1.1.0",
+    "through2": "^3.0.1",
+    "vinyl-fs": "^3.0.3",
+    "which": "^2.0.2"
+  }
+}

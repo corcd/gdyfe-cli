@@ -1,0 +1,346 @@
+/**
+ * @file common stylesheets
+ * @since 1.0.6
+ * @author whzcorcd <whzcorcd@gmail.com>
+ */
+.el-button {
+  color: $panel-color;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 100px;
+  transition: background 0.2s linear;
+
+  i {
+    color: $panel-color;
+  }
+
+  &:hover {
+    color: $panel-color;
+  }
+
+  &:focus {
+    color: $panel-color;
+  }
+}
+
+.el-input {
+  input.el-input__inner {
+    color: $theme-color-white;
+    background-color: transparent;
+    border-color: $theme-color-gray;
+    border-radius: 100px;
+
+    &:hover {
+      border-color: $theme-color-white;
+    }
+
+    &:focus {
+      border-color: $theme-color;
+    }
+  }
+
+  .el-input__suffix {
+    .el-input__count {
+      background-color: transparent;
+
+      span {
+        color: $theme-color-white;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.el-input-number {
+  &:hover {
+    border-color: $theme-color-white;
+  }
+
+  span {
+    background-color: transparent;
+
+    i {
+      color: $theme-color-white;
+    }
+  }
+}
+
+.el-select {
+  border-radius: 100px;
+}
+
+.el-form {
+  .el-form-item {
+    margin-bottom: 5px;
+
+    .el-form-item__label {
+      color: $theme-color-white;
+    }
+
+    label {
+      color: $theme-color-white;
+    }
+  }
+}
+
+.el-tabs {
+  .el-tabs__header {
+    border-bottom: 1px solid $theme-color-gray !important;
+  }
+
+  .el-tabs__nav {
+    border: none !important;
+
+    .el-tabs__item {
+      color: $title-color-white;
+      border: none;
+    }
+
+    .is-active {
+      color: $theme-color;
+    }
+  }
+}
+
+/* 弹出框 */
+.messageBox {
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: 0 2px 12px 0 $theme-color-shadow !important;
+  border-radius: 8px !important;
+
+  .el-message-box__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: $block-color;
+    box-shadow: 0 3px 15px -2px $theme-color-shadow;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    .el-message-box__title {
+      color: $title-color-white;
+      font-weight: bold;
+      // opacity: 0.87;
+    }
+
+    .el-message-box__headerbtn {
+      i {
+        color: $theme-color-white;
+      }
+    }
+  }
+
+  .el-message-box__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    background-color: $block-color;
+
+    .el-message-box__message {
+      height: 100%;
+
+      p {
+        color: $theme-color-white;
+      }
+    }
+  }
+
+  .el-message-box__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $block-color;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    button.el-button--default {
+      width: 120px;
+      height: 28px;
+      background-color: $theme-color-gray;
+      border: none;
+      border-radius: 14px;
+
+      &:hover {
+        background-color: $theme-color-gray-hover;
+      }
+
+      span {
+        color: $theme-color-white;
+      }
+    }
+
+    button.el-button--primary {
+      width: 120px;
+      height: 28px;
+      background-color: $theme-color;
+      border: none;
+      border-radius: 14px;
+
+      &:hover {
+        background-color: $theme-color-hover;
+      }
+
+      span {
+        color: $panel-color;
+      }
+    }
+  }
+}
+
+/* 对话框 */
+.el-dialog {
+  border-radius: 8px !important;
+
+  .el-dialog__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: $block-color;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    span {
+      color: $title-color-white;
+      font-weight: bold;
+      // opacity: 0.87;
+    }
+
+    .el-dialog__headerbtn {
+      top: 16px;
+      height: 24px;
+
+      i {
+        color: $theme-color-white !important;
+      }
+    }
+  }
+
+  .el-dialog__body {
+    padding: 15px 20px 5px 20px;
+    background-color: $block-color;
+
+    .el-form {
+      .el-form-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .el-form-item__label {
+          color: $theme-color-white;
+        }
+
+        .el-form-item__content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin-left: 0 !important;
+
+          .priceInfo {
+            margin-right: 10px;
+
+            span {
+              color: $price-color;
+              font-size: 22px;
+              font-weight: 700;
+              line-height: 32px;
+            }
+          }
+
+          .el-input {
+            input.el-input__inner {
+              color: $theme-color-white;
+              background-color: transparent;
+              border-color: $theme-color-gray;
+
+              &:hover {
+                border-color: $theme-color-white;
+              }
+
+              &:focus {
+                border-color: $theme-color;
+              }
+
+              .el-input__suffix {
+                .el-input__count {
+                  background-color: transparent;
+
+                  span {
+                    color: $theme-color-white;
+                    background-color: transparent;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .el-dialog__footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 15px 10px;
+    background-color: $block-color;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    button.dialog-footer-btn-cancel {
+      width: 120px;
+      height: 28px;
+      background-color: $theme-color-gray;
+      border: none;
+      border-radius: 14px;
+
+      &:hover {
+        background-color: $theme-color-gray-hover;
+      }
+
+      span {
+        color: $theme-color-white;
+      }
+    }
+
+    button.dialog-footer-btn-confirm {
+      width: 120px;
+      height: 28px;
+      background-color: $theme-color;
+      border: none;
+      border-radius: 14px;
+
+      &:hover {
+        background-color: $theme-color-hover;
+      }
+
+      span {
+        color: $panel-color;
+      }
+    }
+
+    button.dialog-footer-btn-del {
+      width: 120px;
+      height: 28px;
+      background-color: $theme-color-red;
+      border: none;
+      border-radius: 14px;
+
+      &:hover {
+        background-color: $theme-color-red-hover;
+      }
+
+      span {
+        color: $theme-color-white;
+      }
+    }
+  }
+}

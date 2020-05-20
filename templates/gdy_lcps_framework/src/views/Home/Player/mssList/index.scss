@@ -1,0 +1,135 @@
+.selected {
+  border: 2px solid $theme-color !important;
+}
+
+.msslist {
+  width: 536px;
+  height: 235px;
+  padding: 0 18px 0 18px;
+
+  .msslist-list {
+    width: 100%;
+    height: 100%;
+
+    .mss-infinite-list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow-y: auto;
+
+      ::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 7px;
+      }
+
+      ::-webkit-scrollbar-track {
+        /*滚动条里面的轨道*/
+        border-radius: 10px;
+        background: transparent;
+      }
+
+      .mss-infinite-list-item {
+        width: 30%;
+        height: 100px;
+        margin: 0 1.5% 8px 1.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .mss-infinite-list-item-content {
+          width: 100%;
+          height: 80px;
+          position: relative;
+          background-color: transparent;
+          box-shadow: 0 3px 15px -2px rgba(0, 0, 0, 0.5);
+          border: 2px solid transparent;
+          border-radius: 5px;
+          overflow: hidden;
+          cursor: pointer;
+
+          .mss-infinite-list-item-content-mark {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .mss-infinite-list-item-content-hover {
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.2s linear;
+
+            &:hover {
+              opacity: 1;
+            }
+
+            span {
+              width: 100%;
+              height: 18px;
+              display: flex;
+              align-items: center;
+              margin: 2px 0 2px 2px;
+              padding: 0;
+              text-align: left;
+              vertical-align: middle;
+              font-size: 0.6em;
+              color: #ffffff;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              background-color: transparent;
+              overflow: hidden;
+            }
+          }
+
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+
+        .mss-infinite-list-item-title {
+          width: 100%;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            width: 100%;
+            display: inline-block;
+            text-align: left;
+            font-size: 0.6em;
+            color: #ffffff;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
