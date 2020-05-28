@@ -1,6 +1,6 @@
 {
   "name": "gdyfe-cli",
-  "version": "0.4.6",
+  "version": "0.4.9",
   "description": "Guangdianyun frontend devlopment tools",
   "publishConfig": {
     "access": "public"

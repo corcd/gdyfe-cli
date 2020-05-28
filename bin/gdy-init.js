@@ -34,7 +34,7 @@ program
         // 获取将要构建的项目根目录
         const projectPath = path.resolve()
         // 获取将要构建的的项目名称
-        const projectName = name || `${answers}_project`
+        const projectName = name || `${answers.type}_project`
 
         const projectAllPath = `${projectPath}/${name}`
 
@@ -44,7 +44,7 @@ program
         fs.ensureDirSync(projectName)
 
         // 获取本地模块下的 gdy_base_framework 目录
-        const cwd = path.join(__dirname, `../templates/gdy_${answers}_framework`)
+        const cwd = path.join(__dirname, `../templates/gdy_${answers.type}_framework`)
 
         // 从 gdy_base_framework 目录中读取除 node_modules 目录下的所有文件并筛选处理
         vfs
